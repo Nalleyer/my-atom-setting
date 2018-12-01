@@ -1,0 +1,16 @@
+packages: [
+  "atom-keyboard-macros-vim"
+  "atom-perforce"
+  "busy-signal"
+  "ex-mode"
+  "git-plus"
+  "intentions"
+  "language-lua"
+  "linter"
+  "linter-lua"
+  "linter-ui-default"
+  "package-sync"
+  "spacemacs-dark-syntax"
+  "spacemacs-evil-keys"
+  "vim-mode-plus"
+]

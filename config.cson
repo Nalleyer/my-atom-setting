@@ -1,0 +1,27 @@
+"*":
+  core:
+    disabledPackages: [
+      "spell-check"
+    ]
+    packagesWithKeymapsDisabled: [
+      "atom-perforce"
+      "spacemacs-evil-keys"
+    ]
+    reopenProjectMenuCount: 20
+    themes: [
+      "one-dark-ui"
+      "spacemacs-dark-syntax"
+    ]
+    uriHandlerRegistration: "always"
+  editor:
+    fontSize: 22
+    softWrap: true
+  "exception-reporting":
+    userId: "ffd16ae9-8801-48d7-8ed3-869a41a27fce"
+  "package-sync":
+    createOnChange: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "vim-mode-plus":
+    useSmartcaseForFind: true
+    useSmartcaseForSearch: true
