@@ -73,6 +73,13 @@
   'ctrl-k l': 'unset!'
   # 'tab': 'unset!'
 #/ end unset ctrl-k
+'atom-text-editor:not([mini])':
+  'ctrl-shift-K': 'unset!'
+
+# global move down, up
+'atom-workspace':
+  'ctrl-shift-k': 'core:move-up'
+  'ctrl-shift-j': 'core:move-down'
 
 # unset other
 # 'atom-text-editor:not([mini]).vim-mode-plus:not(.insert-mode)':
@@ -91,7 +98,9 @@
   'space f c c': 'application:open-your-config'
   'space f c i': 'application:open-your-init-script'
   'space f c k': 'application:open-your-keymap'
-
+  # tree view
+  'space t t': 'tree-view:toggle'
+  'space t tab': 'tree-view:toggle-focus'
   ##################
   # tab and buffer
   ##################
