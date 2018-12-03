@@ -31,18 +31,95 @@
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson
 
+# unset ctrl-k
+'body':
+  'ctrl-k ctrl-alt-w': 'unset!'
+  'ctrl-k ctrl-down': 'unset!'
+  'ctrl-k ctrl-left': 'unset!'
+  'ctrl-k ctrl-right': 'unset!'
+  'ctrl-k ctrl-n': 'unset!'
+  'ctrl-k ctrl-p': 'unset!'
+  'ctrl-k ctrl-w': 'unset!'
+  'ctrl-k down': 'unset!'
+  'ctrl-k left': 'unset!'
+  'ctrl-k right': 'unset!'
+  'ctrl-k up': 'unset!'
+'atom-workspace atom-text-editor:not([mini])':
+  'ctrl-k ctrl-0': 'unset!'
+  'ctrl-k ctrl-1': 'unset!'
+  'ctrl-k ctrl-2': 'unset!'
+  'ctrl-k ctrl-3': 'unset!'
+  'ctrl-k ctrl-4': 'unset!'
+  'ctrl-k ctrl-5': 'unset!'
+  'ctrl-k ctrl-6': 'unset!'
+  'ctrl-k ctrl-7': 'unset!'
+  'ctrl-k ctrl-8': 'unset!'
+  'ctrl-k ctrl-9': 'unset!'
+'.platform-win32, .platform-linux':
+  'ctrl-k ctrl-b': 'unset!'
+'.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+  'ctrl-k ctrl-d': 'unset!'
+'atom-workspace atom-text-editor':
+  'ctrl-k ctrl-l': 'unset!'
+  'ctrl-k ctrl-u': 'unset!'
+'.platform-win32 .tree-view, .platform-linux .tree-view':
+  'ctrl-k down': 'unset!'
+  'ctrl-k up': 'unset!'
+  'ctrl-k right': 'unset!'
+  'ctrl-k left': 'unset!'
+  'ctrl-k h': 'unset!'
+  'ctrl-k j': 'unset!'
+  'ctrl-k k': 'unset!'
+  'ctrl-k l': 'unset!'
+  # 'tab': 'unset!'
+#/ end unset ctrl-k
+
+# unset other
+# 'atom-text-editor:not([mini]).vim-mode-plus:not(.insert-mode)':
+#   'tab': 'unset!'
+
 # my spacemacs keys
-'background-tips, .tree-view, atom-text-editor.vim-mode-plus:not(.insert-mode)':
-  'space space': 'ex-mode:open'
+'background-tips, .tree-view, atom-text-editor:not([mini]).vim-mode-plus:not(.insert-mode)':
+  'space space': 'command-palette:toggle'
+  ##################
+  # file and project
+  ##################
   'space f f': 'fuzzy-finder:toggle-file-finder'
   'space p f': 'fuzzy-finder:toggle-file-finder'
+  'space f n': 'application:new-file'
+  # config
+  'space f c c': 'application:open-your-config'
+  'space f c i': 'application:open-your-init-script'
+  'space f c k': 'application:open-your-keymap'
+
+  ##################
+  # tab and buffer
+  ##################
+  'space b': 'fuzzy-finder:toggle-buffer-finder'
+  ##################
+  # search
+  ##################
+  'space /': 'project-find:show'
+  ##################
+  # comment
+  ##################
+  'space c l': 'editor:toggle-line-comments'
+  ##################
+  # split
+  ##################
+  'space w -': 'pane:split-down-and-copy-active-item'
+  'space w \\': 'pane:split-right-and-copy-active-item'
+  ##################
   #  p4
+  ##################
   'space p 4 e': 'perforce:edit'
   'space p 4 r': 'perforce:revert'
-  'space /': 'project-find:show'
 
-'atom-text-editor:not([mini])':
-  'space b': 'fuzzy-finder:toggle-buffer-finder'
+  ##################
+  # over write
+  ##################
+  'tab': 'vim-mode-plus:move-right'
+  'shift-tab': 'vim-mode-plus:move-left'
 
 # auto complete
 'atom-text-editor:not([mini]) !important':
@@ -56,3 +133,7 @@
   'ctrl-n': 'core:move-down'
   'ctrl-k': 'core:move-up'
   'ctrl-j': 'core:move-down'
+
+# 'atom-text-editor:(mini)':
+#   'ctrl-k': 'core:move-up'
+#   'ctrl-j': 'core:move-down'
