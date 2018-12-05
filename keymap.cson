@@ -85,6 +85,10 @@
 # 'atom-text-editor:not([mini]).vim-mode-plus:not(.insert-mode)':
 #   'tab': 'unset!'
 
+# copy from vim-mode-plus-keymaps-for-surround
+'atom-text-editor.vim-mode-plus.visual-mode:not(.insert-mode)':
+  's': 'vim-mode-plus:surround'
+
 # my spacemacs keys
 'background-tips, .tree-view, atom-text-editor:not([mini]).vim-mode-plus:not(.insert-mode)':
   'space space': 'command-palette:toggle'
@@ -104,7 +108,8 @@
   ##################
   # tab and buffer
   ##################
-  'space b': 'fuzzy-finder:toggle-buffer-finder'
+  'space b b': 'fuzzy-finder:toggle-buffer-finder'
+  'space b i': 'atom-beautify:beautify-editor'
   ##################
   # search
   ##################
@@ -132,7 +137,7 @@
 
 # auto complete
 'atom-text-editor:not([mini]) !important':
-   'enter': 'editor:newline'
+  'enter': 'editor:newline'
 'atom-text-editor:not(mini).autocomplete-active':
   'tab': 'editor:indent'
   'up': 'unset!'
