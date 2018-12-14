@@ -1,10 +1,22 @@
 "*":
+  "activate-power-mode":
+    autoToggle: false
+    comboMode: {}
+    particles:
+      enabled: false
+    plugins:
+      playAudio: true
+      screenShake: true
+    screenShake:
+      enabled: false
   "atom-beautify":
     general:
       muteAllErrors: true
       showLoadingView: false
     haskell:
       beautify_on_save: true
+    lua:
+      indent_size: 4
   "atom-haskell":
     hasAddedConfiguration: true
   "autocomplete-haskell":
@@ -12,11 +24,15 @@
   core:
     disabledPackages: [
       "spell-check"
-      "atom-perforce"
+      "spacemacs-evil-keys"
+      "vim-mode-plus-keymaps-for-surround"
     ]
     packagesWithKeymapsDisabled: [
       "atom-perforce"
       "spacemacs-evil-keys"
+      "nyancat-scroll"
+      "activate-power-mode"
+      "zentabs"
     ]
     reopenProjectMenuCount: 20
     themes: [
@@ -25,12 +41,20 @@
     ]
     uriHandlerRegistration: "always"
   editor:
-    fontFamily: "Hasklig"
-    fontSize: 22
+    atomicSoftTabs: false
+    fontSize: 20
+    invisibles:
+      cr: " "
+      eol: " "
+      space: " "
     preferredLineLength: 90
+    showInvisibles: true
     softWrap: true
+    tabLength: 4
+    tabType: "soft"
   "exception-reporting":
     userId: "ffd16ae9-8801-48d7-8ed3-869a41a27fce"
+  "fuzzy-finder": {}
   "haskell-ghc-mod":
     lowMemorySystem: true
     onChangeCheck: true
@@ -44,12 +68,36 @@
       activeGhcVersion: "8.0"
   "ide-haskell-repl":
     defaultRepl: "stack"
+  "linter-lua":
+    executablePath: "C:\\lua\\luac.exe"
   "linter-ui-default":
     hidePanelWhenEmpty: false
-    panelHeight: 177
-    showPanel: true
+    panelHeight: 300
   "package-sync":
     createOnChange: true
+  "todo-show":
+    findTheseTodos: [
+      "TODO"
+      "FIXME"
+      "CHANGED"
+      "XXX"
+      "IDEA"
+      "HACK"
+      "NOTE"
+      "REVIEW"
+      "NB"
+      "BUG"
+      "QUESTION"
+      "COMBAK"
+      "TEMP"
+      "TESTME"
+    ]
+    showInTable: [
+      "Text"
+      "Type"
+    ]
+    sortAscending: false
+    sortBy: "Path"
   "tree-view":
     hideVcsIgnoredFiles: true
   "vim-mode-plus":
@@ -57,3 +105,11 @@
     useSmartcaseForSearch: true
   welcome:
     showOnStartup: false
+  whitespace:
+    removeTrailingWhitespace: false
+  zentabs:
+    manualMode: true
+    maximumOpenedTabs: 30
+".lua.source":
+  editor:
+    tabLength: 4

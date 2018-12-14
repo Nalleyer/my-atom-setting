@@ -102,9 +102,17 @@
   'space f c c': 'application:open-your-config'
   'space f c i': 'application:open-your-init-script'
   'space f c k': 'application:open-your-keymap'
-  # tree view
+  ##################
+  # toggle something
+  ##################
   'space t t': 'tree-view:toggle'
   'space t tab': 'tree-view:toggle-focus'
+  # todo show
+  'space t d f': 'todo-show:find-in-active-file'
+  'space t d F': 'todo-show:find-in-open-files'
+  'space t d p': 'todo-show:find-in-project'
+  'space t d w': 'todo-show:find-in-workspace'
+  'space t d t': 'todo-show:toggle'
   ##################
   # tab and buffer
   ##################
@@ -128,6 +136,14 @@
   ##################
   'space p 4 e': 'perforce:edit'
   'space p 4 r': 'perforce:revert'
+  ##################
+  #  fold
+  ##################
+  'space z f' : 'editor:fold-selection'
+  ##################
+  #  delete something
+  ##################
+  'space x d w' : 'whitespace:remove-trailing-whitespace'
 
   ##################
   # over write
