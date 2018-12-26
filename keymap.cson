@@ -144,12 +144,30 @@
   #  delete something
   ##################
   'space x d w' : 'whitespace:remove-trailing-whitespace'
+  ##################
+  # alignment 
+  ##################
+  'space a r' : 'align-regexp:align-selection'
 
   ##################
   # over write
   ##################
   'tab': 'vim-mode-plus:move-right'
   'shift-tab': 'vim-mode-plus:move-left'
+  ##################
+  # leader keys: easy motion redux
+  ##################
+  '\\ w': 'easy-motion-redux:words'
+  '\\ f': 'easy-motion-redux:words_starting'
+  '\\ F': 'easy-motion-redux:letter'
+  '\\ j': 'easy-motion-redux:lines'
+  '\\ k': 'easy-motion-redux:lines'
+  # select and move
+  '\\ s w': 'easy-motion-redux:words-select'
+  '\\ s f': 'easy-motion-redux:words_starting-select'
+  '\\ s F': 'easy-motion-redux:letter-select'
+  '\\ s j': 'easy-motion-redux:lines-select'
+  '\\ s k': 'easy-motion-redux:lines-select'
 
 # auto complete
 'atom-text-editor:not([mini]) !important':

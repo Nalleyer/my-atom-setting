@@ -9,6 +9,8 @@
       screenShake: true
     screenShake:
       enabled: false
+  alignment: {}
+  "atom-alignment": {}
   "atom-beautify":
     general:
       muteAllErrors: true
@@ -26,6 +28,8 @@
       "spell-check"
       "spacemacs-evil-keys"
       "vim-mode-plus-keymaps-for-surround"
+      "git-plus"
+      "git-diff"
     ]
     packagesWithKeymapsDisabled: [
       "atom-perforce"
@@ -33,6 +37,9 @@
       "nyancat-scroll"
       "activate-power-mode"
       "zentabs"
+      "git-diff"
+      "github"
+      "align-regexp"
     ]
     reopenProjectMenuCount: 20
     themes: [
@@ -55,6 +62,8 @@
   "exception-reporting":
     userId: "ffd16ae9-8801-48d7-8ed3-869a41a27fce"
   "fuzzy-finder": {}
+  "git-diff":
+    wrapAroundOnMoveToDiff: false
   "haskell-ghc-mod":
     lowMemorySystem: true
     onChangeCheck: true
@@ -96,8 +105,7 @@
       "Text"
       "Type"
     ]
-    sortAscending: false
-    sortBy: "Path"
+    sortBy: "Type"
   "tree-view":
     hideVcsIgnoredFiles: true
   "vim-mode-plus":
