@@ -84,6 +84,8 @@
 # unset other
 # 'atom-text-editor:not([mini]).vim-mode-plus:not(.insert-mode)':
 #   'tab': 'unset!'
+'atom-text-editor.vim-mode-plus-input-char-waiting':
+    '\\' :'unset'
 
 # copy from vim-mode-plus-keymaps-for-surround
 'atom-text-editor.vim-mode-plus.visual-mode:not(.insert-mode)':
@@ -118,6 +120,10 @@
   ##################
   'space b b': 'fuzzy-finder:toggle-buffer-finder'
   'space b i': 'atom-beautify:beautify-editor'
+  'space b z p': 'zentabs:toggletab'
+  'space b z c': 'zentabs:cleanup'
+  # web browser
+  'space b w b': 'browser-plus:open'
   ##################
   # search
   ##################

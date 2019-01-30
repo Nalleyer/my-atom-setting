@@ -21,15 +21,21 @@
       indent_size: 4
   "atom-haskell":
     hasAddedConfiguration: true
+  "atom-ide-ui":
+    "atom-ide-diagnostics-ui":
+      statusBarPosition: "right"
   "autocomplete-haskell":
     hideHintPanelIfEmpty: false
+  "browser-plus": {}
   core:
+    debugLSP: true
     disabledPackages: [
       "spell-check"
       "spacemacs-evil-keys"
       "vim-mode-plus-keymaps-for-surround"
       "git-plus"
       "git-diff"
+      "linter"
     ]
     packagesWithKeymapsDisabled: [
       "atom-perforce"
@@ -40,6 +46,7 @@
       "git-diff"
       "github"
       "align-regexp"
+      "browser-plus"
     ]
     reopenProjectMenuCount: 20
     themes: [
@@ -77,6 +84,9 @@
       activeGhcVersion: "8.0"
   "ide-haskell-repl":
     defaultRepl: "stack"
+  "ide-rust":
+    checkForToolchainUpdates: false
+    rlsToolchain: "stable"
   "linter-lua":
     executablePath: "C:\\lua\\luac.exe"
   "linter-ui-default":
@@ -117,7 +127,7 @@
     removeTrailingWhitespace: false
   zentabs:
     manualMode: true
-    maximumOpenedTabs: 30
+    maximumOpenedTabs: 20
 ".lua.source":
   editor:
     tabLength: 4
