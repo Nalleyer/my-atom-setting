@@ -37,6 +37,7 @@ packages: [
   "monokai"
   "nyancat-scroll"
   "package-sync"
+  "rocket-dark-syntax"
   "spacemacs-dark-syntax"
   "spacemacs-evil-keys"
   "todo-show"

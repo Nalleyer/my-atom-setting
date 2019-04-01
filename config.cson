@@ -12,13 +12,21 @@
   alignment: {}
   "atom-alignment": {}
   "atom-beautify":
+    css:
+      indent_size: 2
     general:
       muteAllErrors: true
       showLoadingView: false
     haskell:
       beautify_on_save: true
+    html:
+      indent_size: 2
     lua:
       indent_size: 4
+    vue:
+      indent_inner_html: true
+      indent_size: 2
+      wrap_attributes_indent_size: 2
   "atom-haskell":
     hasAddedConfiguration: true
   "atom-ide-ui":
@@ -30,12 +38,13 @@
   core:
     debugLSP: true
     disabledPackages: [
-      "spell-check"
       "spacemacs-evil-keys"
       "vim-mode-plus-keymaps-for-surround"
       "git-plus"
       "git-diff"
       "linter"
+      "github"
+      "spell-check"
     ]
     packagesWithKeymapsDisabled: [
       "atom-perforce"
@@ -48,10 +57,13 @@
       "align-regexp"
       "browser-plus"
     ]
+    packagesWithSnippetsDisabled: [
+      "language-lua"
+    ]
     reopenProjectMenuCount: 20
     themes: [
       "one-dark-ui"
-      "monokai"
+      "rocket-dark-syntax"
     ]
     uriHandlerRegistration: "always"
   editor:
@@ -68,7 +80,8 @@
     tabType: "soft"
   "exception-reporting":
     userId: "ffd16ae9-8801-48d7-8ed3-869a41a27fce"
-  "fuzzy-finder": {}
+  "fuzzy-finder":
+    prefillFromSelection: true
   "git-diff":
     wrapAroundOnMoveToDiff: false
   "haskell-ghc-mod":
@@ -94,6 +107,10 @@
     panelHeight: 300
   "package-sync":
     createOnChange: true
+  "spell-check":
+    locales: [
+      "en"
+    ]
   "todo-show":
     findTheseTodos: [
       "TODO"
@@ -115,9 +132,9 @@
       "Text"
       "Type"
     ]
+    sortAscending: false
     sortBy: "Type"
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   "vim-mode-plus":
     useSmartcaseForFind: true
     useSmartcaseForSearch: true
@@ -126,8 +143,14 @@
   whitespace:
     removeTrailingWhitespace: false
   zentabs:
-    manualMode: true
-    maximumOpenedTabs: 20
+    maximumOpenedTabs: 10
+".html.text.vue":
+  editor:
+    tabLength: 2
+".js.source":
+  editor:
+    tabLength: 2
 ".lua.source":
   editor:
+    showIndentGuide: true
     tabLength: 4
