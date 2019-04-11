@@ -45,6 +45,7 @@
       "linter"
       "github"
       "spell-check"
+      "activate-power-mode"
     ]
     packagesWithKeymapsDisabled: [
       "atom-perforce"
@@ -56,6 +57,7 @@
       "github"
       "align-regexp"
       "browser-plus"
+      "atom-typescript"
     ]
     packagesWithSnippetsDisabled: [
       "language-lua"
