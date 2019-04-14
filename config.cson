@@ -1,9 +1,7 @@
 "*":
   "activate-power-mode":
-    autoToggle: false
     comboMode: {}
-    particles:
-      enabled: false
+    particles: {}
     plugins:
       playAudio: true
       screenShake: true
@@ -45,6 +43,8 @@
       "linter"
       "github"
       "spell-check"
+      "atom-perforce"
+      "activate-power-mode"
     ]
     packagesWithKeymapsDisabled: [
       "atom-perforce"
